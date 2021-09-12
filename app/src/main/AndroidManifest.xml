@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Mercari">
         <activity
+            android:name=".ItemDetail"
+            android:exported="true" />
+        <activity
             android:name=".SearchResult"
             android:exported="true" />
         <activity

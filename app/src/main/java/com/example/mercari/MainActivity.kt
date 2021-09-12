@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.SearchView
+
+const val SEARCH_WORDS = "com.example.mercari.MESSAGE"
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +36,14 @@ class MainActivity : AppCompatActivity() {
 
             override fun onQueryTextSubmit(query: String?): Boolean {
                 // submit button pressed
-                val intent = Intent(this@MainActivity, SearchResult::class.java)
+                val editText = findViewById<SearchView>(R.id.search)
+                val message = editText.query.toString()
+
+                //create Intent class object
+                val intent = Intent(this@MainActivity, SearchResult::class.java).apply {
+                    putExtra(SEARCH_WORDS, message)
+                }
+
                 startActivity(intent)
                 return true
             }
