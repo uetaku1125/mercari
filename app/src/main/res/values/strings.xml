@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">mercari</string>
+    <string name="btn_home">ホーム</string>
+    <string name="btn_mypage">マイページ</string>
+    <string name="btn_profile">個人情報設定</string>
+    <string name="btn_address">発送元・お届け先住所</string>
+    <string name="btn_redAddr">新しい住所を登録</string>
+    <string name="btn_back">戻る</string>
+    <string name="edit_family_name">姓（全角）</string>
+    <string name="text_address">住所</string>
+    <string name="text_title">商品名</string>
+
+</resources>
