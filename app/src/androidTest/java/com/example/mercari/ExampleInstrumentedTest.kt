@@ -1,6 +1,5 @@
 package com.example.mercari
 
-import android.content.ClipData
 import androidx.test.espresso.Espresso.onView
 import androidx.test.espresso.action.ViewActions
 import androidx.test.espresso.action.ViewActions.click
@@ -8,6 +7,7 @@ import androidx.test.espresso.assertion.ViewAssertions.matches
 import androidx.test.espresso.matcher.ViewMatchers.*
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
+import androidx.test.rule.ActivityTestRule
 
 import org.junit.Before
 import org.junit.Rule
@@ -31,8 +31,9 @@ class ExampleInstrumentedTest {
         assertEquals("com.example.mercari", appContext.packageName)
     }
 
- //   @get:Rule
- //   val activityRule = ActivityTestRule(MainActivity::class.java)
+    //can not refer to ActivityTestRule, so can not resolve the error...
+    //@get:Rule
+    //val activityRule = ActivityTestRule(MainActivity::class.java)
 
     @Test
     fun registerAddress() {

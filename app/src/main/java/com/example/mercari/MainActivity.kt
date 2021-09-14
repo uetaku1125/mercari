@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
-import android.widget.EditText
 import android.widget.SearchView
 
 const val SEARCH_WORDS = "com.example.mercari.MESSAGE"
@@ -16,7 +15,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val btnIntent = findViewById<Button>(R.id.btn_mypage)
-        //val searchIntent = findViewById<SearchView>(R.id.search)
 
         btnIntent.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
